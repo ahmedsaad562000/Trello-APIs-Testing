@@ -15,9 +15,10 @@ public class Hooks {
     static String baseUrl = null;
     static String token = null;
     static String key = null;
-
+    static String Org_Id_file_name = null;
+    static String Board_Id_file_name = null;
+    static String List_Id_file_name = null;
     static RequestSpecification req_specs = null;
-
     static Response response = null;
 
     @Before
@@ -26,6 +27,9 @@ public class Hooks {
         baseUrl = "https://api.trello.com";
         token = "ATTA303dab56867a222884cb70e5c2b9cd336ae19d4f5eb8f6d848e7bc8c121bbf17C6E6A63B";
         key = "69fb511ab6c28f5573ab10eab9045cc9";
+        Board_Id_file_name = "Created_board_id.txt";
+        Org_Id_file_name = "Created_org_id.txt";
+        List_Id_file_name = "Created_list_id.txt";
     }
 
     @Given("^Add base path \"(.*)\"$")
@@ -50,6 +54,7 @@ public class Hooks {
             default:
                 break;
         }
+        response.prettyPrint();
     }
 
     @Then("Status_code is 200")

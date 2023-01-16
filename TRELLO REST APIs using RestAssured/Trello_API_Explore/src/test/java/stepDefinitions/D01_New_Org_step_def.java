@@ -1,17 +1,9 @@
 package stepDefinitions;
 
-import Vars.Vars;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import org.testng.asserts.SoftAssert;
-
-import javax.management.remote.rmi._RMIConnection_Stub;
 
 public class D01_New_Org_step_def {
     String token = null;
@@ -51,7 +43,7 @@ public class D01_New_Org_step_def {
     {
         JsonPath path = Hooks.response.jsonPath();
         String returned_id = path.get("id");
-        Vars.set_Created_Org_ID(returned_id);
+        FileOperations.Save_file(Hooks.Org_Id_file_name , returned_id);
     }
 
 

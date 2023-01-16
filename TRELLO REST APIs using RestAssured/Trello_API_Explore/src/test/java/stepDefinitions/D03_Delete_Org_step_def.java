@@ -1,8 +1,6 @@
 package stepDefinitions;
 
-import Vars.Vars;
 import io.cucumber.java.en.When;
-import io.cucumber.messages.types.Hook;
 import io.restassured.RestAssured;
 
 public class D03_Delete_Org_step_def {
@@ -20,7 +18,8 @@ public class D03_Delete_Org_step_def {
     @When("Add Organization ID")
     public void add_org_id()
     {
-        RestAssured.baseURI =  RestAssured.baseURI +"/"+ Vars.get_Created_Org_ID();
+        String Org_ID = FileOperations.open_file(Hooks.Org_Id_file_name);
+        RestAssured.baseURI =  RestAssured.baseURI +"/"+ Org_ID;
         Hooks.req_specs = RestAssured.given();
     }
 
