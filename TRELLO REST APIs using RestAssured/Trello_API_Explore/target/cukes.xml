@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="10.553">
+<testcase classname="F01: Create New Organization" name="use api to create new org" time="2.933">
+<system-out><![CDATA[Given Add base path "/1/organizations"......................................passed
+When Add Organization name "Test_Org".......................................passed
+And Add Token & Key.........................................................passed
+And Method = "Post".........................................................passed
+Then Status_code is 200.....................................................passed
+Then Save id of the returned org............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02: Get Member Organizations" name="use api to get member organizations" time="0.64">
+<system-out><![CDATA[Given Add base path "/1/members/me".........................................passed
+And Add Token & Key.........................................................passed
+And Method = "Get"..........................................................passed
+Then Status_code is 200.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03: Create New Board" name="use api to Create New Board" time="0.845">
+<system-out><![CDATA[Given Add base path "/1/boards".............................................passed
+When Add Board name "Test_Board"............................................passed
+And Add Token & Key.........................................................passed
+And Method = "Post".........................................................passed
+Then Status_code is 200.....................................................passed
+Then Save id of the returned Board..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04: Get Boards in an Organizations" name="Get Boards in an Organizations" time="0.668">
+<system-out><![CDATA[Given Add base path "/1/organizations"......................................passed
+When Add Organization ID....................................................passed
+And Add "boards" to url.....................................................passed
+And Add Token & Key.........................................................passed
+And Method = "Get"..........................................................passed
+Then Status_code is 200.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05: Create New List" name="use api to Create New List" time="0.726">
+<system-out><![CDATA[Given Add base path "/1/lists"..............................................passed
+When Add List name "Test_List"..............................................passed
+And Add Token & Key.........................................................passed
+And Method = "Post".........................................................passed
+Then Status_code is 200.....................................................passed
+Then Save id of the returned List...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F06: Get Boards in an Organizations" name="Get Lists of a Board" time="0.651">
+<system-out><![CDATA[Given Add base path "/1/boards".............................................passed
+When Add Board ID...........................................................passed
+And Add "lists" to url......................................................passed
+And Add Token & Key.........................................................passed
+And Method = "Get"..........................................................passed
+Then Status_code is 200.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07: Archive &amp; Unarchive List" name="use api to Archive List" time="0.686">
+<system-out><![CDATA[Given Add base path "/1/lists"..............................................passed
+When Add List ID............................................................passed
+And Add "closed" to url.....................................................passed
+And Add Token & Key.........................................................passed
+And Make value = "True".....................................................passed
+And Method = "Put"..........................................................passed
+Then Status_code is 200.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07: Archive &amp; Unarchive List" name="use api to Unarchive List" time="0.701">
+<system-out><![CDATA[Given Add base path "/1/lists"..............................................passed
+When Add List ID............................................................passed
+And Add "closed" to url.....................................................passed
+And Add Token & Key.........................................................passed
+And Make value = "False"....................................................passed
+And Method = "Put"..........................................................passed
+Then Status_code is 200.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08: Delete Board" name="use api to delete Board" time="1.526">
+<system-out><![CDATA[Given Add base path "/1/boards".............................................passed
+When Add Board ID...........................................................passed
+And Add Token & Key.........................................................passed
+And Method = "Delete".......................................................passed
+Then Status_code is 200.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F09: Delete Organization" name="use api to delete organizations" time="0.985">
+<system-out><![CDATA[Given Add base path "/1/organizations"......................................passed
+When Add Organization ID....................................................passed
+And Add Token & Key.........................................................passed
+And Method = "Delete".......................................................passed
+Then Status_code is 200.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

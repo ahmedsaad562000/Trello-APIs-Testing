@@ -1,5 +1,5 @@
 @smoke
-Feature: F03: Delete Organization
+Feature: F09: Delete Organization
   Scenario: use api to delete organizations
     Given Add base path "/1/organizations"
     When Add Organization ID

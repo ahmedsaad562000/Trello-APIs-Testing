@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="11145" started-at="2023-01-16T23:05:17Z" finished-at="2023-01-16T23:05:28Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="11145" started-at="2023-01-16T23:05:17Z" finished-at="2023-01-16T23:05:28Z">
+      <class name="runners.testrunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.testrunner@153f5a29]" name="setUpClass" is-config="true" duration-ms="575" started-at="2023-01-17T01:05:17Z" finished-at="2023-01-17T01:05:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@43982337]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="3001" started-at="2023-01-17T01:05:18Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["use api to create new org"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F01: Create New Organization"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="646" started-at="2023-01-17T01:05:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["use api to get member organizations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F02: Get Member Organizations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="849" started-at="2023-01-17T01:05:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["use api to Create New Board"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F03: Create New Board"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="672" started-at="2023-01-17T01:05:22Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get Boards in an Organizations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F04: Get Boards in an Organizations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="731" started-at="2023-01-17T01:05:23Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["use api to Create New List"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F05: Create New List"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="654" started-at="2023-01-17T01:05:24Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get Lists of a Board"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F06: Get Boards in an Organizations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="690" started-at="2023-01-17T01:05:24Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["use api to Archive List"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F07: Archive & Unarchive List"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="703" started-at="2023-01-17T01:05:25Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["use api to Unarchive List"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F07: Archive & Unarchive List"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="1528" started-at="2023-01-17T01:05:26Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["use api to delete Board"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F08: Delete Board"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.testrunner@153f5a29]" name="runScenario" duration-ms="988" started-at="2023-01-17T01:05:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-17T01:05:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["use api to delete organizations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["F09: Delete Organization"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.testrunner@153f5a29]" name="tearDownClass" is-config="true" duration-ms="94" started-at="2023-01-17T01:05:28Z" finished-at="2023-01-17T01:05:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.testrunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

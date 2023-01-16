@@ -3,13 +3,13 @@ package stepDefinitions;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 
-public class D03_Delete_Org_step_def {
+public class D09_Delete_Org_step_def {
     String token = null;
     String baseurl = null;
     String key = null;
 
 
-    public D03_Delete_Org_step_def() {
+    public D09_Delete_Org_step_def() {
         token = Hooks.token;
         baseurl = Hooks.baseUrl;
         key = Hooks.key;

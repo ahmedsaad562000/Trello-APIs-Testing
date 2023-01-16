@@ -51,6 +51,8 @@ public class Hooks {
             case "Delete":
                 response = req_specs.delete();
                 break;
+            case "Put":
+                response=req_specs.put();
             default:
                 break;
         }
@@ -63,6 +65,8 @@ public class Hooks {
         //create_org_resp.prettyPrint();
         int status_code = response.getStatusCode();
         System.out.println(status_code);
+        RestAssured.basePath = "";
+        RestAssured.baseURI = "";
         SoftAssert Soft_Assertion = new SoftAssert();
         Soft_Assertion.assertEquals(status_code , 200 , "Status code isn't 200");
         Soft_Assertion.assertAll();
