@@ -21,5 +21,7 @@ Then tests results are generated in a neat report using Cucumber.
 		
     2- Click on "\TRELLO REST APIs using RestAssured\Run_Tests.sh" file
 	
-<b>Note:</b> You can see all generated reports in "\TRELLO REST APIs using RestAssured\Trello_API_Explore\target\cucumber-html-reports"
+<b>Note:</b>
+
+You can see all generated reports in "\TRELLO REST APIs using RestAssured\Trello_API_Explore\target\cucumber-html-reports"
 
