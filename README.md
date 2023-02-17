@@ -4,7 +4,7 @@ This is a project made to pass the eg-fwd Backend Testing ND
 
 Using Java progrmming Language, RestAssured, TestNG and Cucumber Reporting tool.
 
-This program tests test Trello's Website APIs through both Postman and RestAssured
+This program tests Trello's Website APIs through both Postman and RestAssured
 
 Then tests results are generated in a neat report using Cucumber.
  
